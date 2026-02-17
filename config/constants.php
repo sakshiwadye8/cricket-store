@@ -12,7 +12,8 @@ define('DB_PASSWORD', 'fYv5wyj3Lzxfsfbq');
 define('DB_NAME', 'test'); // or your db name
 
 // Database Connection
-$conn = mysqli_connect(LOCALHOST, DB_USERNAME, DB_PASSWORD) or die(mysqli_error());
+$conn = mysqli_connect(LOCALHOST, DB_USERNAME, DB_PASSWORD, DB_NAME, 4000);
+ or die(mysqli_error());
 $db_select = mysqli_select_db($conn, DB_NAME) or die(mysqli_error());
 
 ?>
