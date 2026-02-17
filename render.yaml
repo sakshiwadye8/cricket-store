@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: cricket-store
+    runtime: php
+    buildCommand: ""
+    startCommand: ""
