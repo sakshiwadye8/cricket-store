@@ -6,26 +6,10 @@ if (session_status() == PHP_SESSION_NONE) {
 }
 
 // Create Constants (only if not defined)
-if (!defined('SITEURL')) {
-    define('SITEURL', 'http://localhost/CRICKET-STORE/');
-}
-
-// Database Constants
-if (!defined('LOCALHOST')) {
-    define('LOCALHOST', 'localhost');
-}
-
-if (!defined('DB_USERNAME')) {
-    define('DB_USERNAME', 'root');
-}
-
-if (!defined('DB_PASSWORD')) {
-    define('DB_PASSWORD', '');
-}
-
-if (!defined('DB_NAME')) {
-    define('DB_NAME', 'cricket_store');
-}
+define('LOCALHOST', 'gateway01.ap-southeast-1.prod.aws.tidbcloud.com');
+define('DB_USERNAME', '3RnCJM8nYe7PLXW.root');
+define('DB_PASSWORD', 'fYv5wyj3Lzxfsfbq');
+define('DB_NAME', 'test'); // or your db name
 
 // Database Connection
 $conn = mysqli_connect(LOCALHOST, DB_USERNAME, DB_PASSWORD) or die(mysqli_error());
