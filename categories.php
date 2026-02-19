@@ -28,7 +28,8 @@
                                 else
                                 {
                             ?>
-                                    <img src="<?php echo SITEURL; ?>images/category/<?php echo $image_name; ?>" 
+                                    <img src="<?php echo SITEURL; ?>images/product/<?php echo $image_name; ?>">
+" 
                                          class="img-responsive img-curve">
                             <?php
                                 }
