@@ -4,10 +4,14 @@
 define('SITEURL', 'https://cricket-store-2.onrender.com/');
 
 // Database Constants
-define('LOCALHOST', 'gateway01.ap-southeast-1.prod.aws.tidbcloud.com');
-define('DB_USERNAME', '3RnCJM8nYe7PLXW.root');
-define('DB_PASSWORD', 'fYv5wyj3Lzxfsfbq');
-define('DB_NAME', 'test');
+$conn = mysqli_connect(
+    "gateway01.ap-southeast-1.prod.aws.tidbcloud.com",
+    "oi4z2DV1NMQGcKv.root",
+    "huknkaUfLA8NavGB",
+    "test",
+    4000
+);
+);
 ;
 
 // Create connection with SSL
